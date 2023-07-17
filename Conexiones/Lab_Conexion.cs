@@ -16,7 +16,7 @@ objConstructorConexion.InitialCatalog = "NombreBaseDeDatos";
 objConstructorConexion.IntegratedSecurity = true;
 objconexion.ConnectionString = objConstructorConexion.ConnectionString;
 
-// Creadondo una conexion por medio del archivo app.xonfig
+// Creando una conexion por medio del archivo app.xonfig
 // Agregar referncias System.Configuration
 
 SqlConnection objCon = new SqlConnection();

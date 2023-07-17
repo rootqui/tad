@@ -10,6 +10,14 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Transactions;
 
+/*
+Transacciones Distribuidas
+Agregar Referencias -> Transactions
+Iniciar el servicio de Coordinador de transacciones distribuidas
+
+*/
+
+
 namespace PracticaCalificada
 {
     public partial class FrmReceta_TransacionDistribuida : Form

@@ -39,4 +39,13 @@ catch (Exception ex)
     MessageBox.Show(objCon.State.ToString());
 }
 
-
+Dictionary<String, String> CrearListaConexiones() 
+{
+    ConnectionStringSettingsCollection conexiones = ConfigurationManager.ConnectionStrings;
+    Dictionary<String, String> listaConexiones = new Dictionary<String, String>();
+    foreach (ConnectionStringSettings cs in conexiones)
+    {
+        listaConexiones.Add(cs.Name, cs.ConnectionString);
+    }
+    return listaConexiones;
+}

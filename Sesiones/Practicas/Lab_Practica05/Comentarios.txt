@@ -1,0 +1,1 @@
+Se debe utilizar SP para carga de tabla de ubigeo

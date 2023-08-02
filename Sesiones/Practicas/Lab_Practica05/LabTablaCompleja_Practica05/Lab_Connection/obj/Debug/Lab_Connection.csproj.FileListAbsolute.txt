@@ -1,0 +1,10 @@
+C:\Users\amollo\Desktop\TAD\2021 1\TAD\Lab_Connection\bin\Debug\Lab_Connection.exe.config
+C:\Users\amollo\Desktop\TAD\2021 1\TAD\Lab_Connection\bin\Debug\Lab_Connection.exe
+C:\Users\amollo\Desktop\TAD\2021 1\TAD\Lab_Connection\bin\Debug\Lab_Connection.pdb
+C:\Users\amollo\Desktop\TAD\2021 1\TAD\Lab_Connection\obj\Debug\Lab_Connection.csprojResolveAssemblyReference.cache
+C:\Users\amollo\Desktop\TAD\2021 1\TAD\Lab_Connection\obj\Debug\Lab_Connection.Form1.resources
+C:\Users\amollo\Desktop\TAD\2021 1\TAD\Lab_Connection\obj\Debug\Lab_Connection.Properties.Resources.resources
+C:\Users\amollo\Desktop\TAD\2021 1\TAD\Lab_Connection\obj\Debug\Lab_Connection.csproj.GenerateResource.cache
+C:\Users\amollo\Desktop\TAD\2021 1\TAD\Lab_Connection\obj\Debug\Lab_Connection.csproj.CoreCompileInputs.cache
+C:\Users\amollo\Desktop\TAD\2021 1\TAD\Lab_Connection\obj\Debug\Lab_Connection.exe
+C:\Users\amollo\Desktop\TAD\2021 1\TAD\Lab_Connection\obj\Debug\Lab_Connection.pdb

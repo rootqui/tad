@@ -1,0 +1,3 @@
+En el evento BtnAyudaID_Click, carga incompleta de datos del usuario: Clave
+En el evento BtnAyudaCorreo_Click, carga incompleta de datos del usuario: Clave
+En el evento BtnAyudaNombre_Click, carga incompleta de datos del usuario: Clave

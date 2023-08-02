@@ -1,0 +1,10 @@
+C:\Users\amollo\Documents\ISUR\TAD\2021 1\LabSqlDataAdapter_Desarrollado\Lab_DataAdapter\obj\Debug\Lab_DataAdapter.csprojResolveAssemblyReference.cache
+C:\Users\amollo\Documents\ISUR\TAD\2021 1\LabSqlDataAdapter_Desarrollado\Lab_DataAdapter\obj\Debug\Lab_DataAdapter.Properties.Resources.resources
+C:\Users\amollo\Documents\ISUR\TAD\2021 1\LabSqlDataAdapter_Desarrollado\Lab_DataAdapter\obj\Debug\Lab_DataAdapter.csproj.GenerateResource.cache
+C:\Users\amollo\Documents\ISUR\TAD\2021 1\LabSqlDataAdapter_Desarrollado\Lab_DataAdapter\obj\Debug\Lab_DataAdapter.csproj.CoreCompileInputs.cache
+C:\Users\amollo\Documents\ISUR\TAD\2021 1\LabSqlDataAdapter_Desarrollado\Lab_DataAdapter\bin\Debug\Lab_DataAdapter.exe.config
+C:\Users\amollo\Documents\ISUR\TAD\2021 1\LabSqlDataAdapter_Desarrollado\Lab_DataAdapter\bin\Debug\Lab_DataAdapter.exe
+C:\Users\amollo\Documents\ISUR\TAD\2021 1\LabSqlDataAdapter_Desarrollado\Lab_DataAdapter\bin\Debug\Lab_DataAdapter.pdb
+C:\Users\amollo\Documents\ISUR\TAD\2021 1\LabSqlDataAdapter_Desarrollado\Lab_DataAdapter\obj\Debug\Lab_DataAdapter.exe
+C:\Users\amollo\Documents\ISUR\TAD\2021 1\LabSqlDataAdapter_Desarrollado\Lab_DataAdapter\obj\Debug\Lab_DataAdapter.pdb
+C:\Users\amollo\Documents\ISUR\TAD\2021 1\LabSqlDataAdapter_Desarrollado\Lab_DataAdapter\obj\Debug\Lab_DataAdapter.FrmProducto.resources

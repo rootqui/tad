@@ -1,0 +1,11 @@
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\bin\Debug\LabDataSet.exe.config
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\bin\Debug\LabDataSet.exe
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\bin\Debug\LabDataSet.pdb
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\obj\Debug\LabDataSet.csprojResolveAssemblyReference.cache
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\obj\Debug\LabDataSet.FrmBusqueda.resources
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\obj\Debug\LabDataSet.FrmUsuario.resources
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\obj\Debug\LabDataSet.Properties.Resources.resources
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\obj\Debug\LabDataSet.csproj.GenerateResource.cache
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\obj\Debug\LabDataSet.csproj.CoreCompileInputs.cache
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\obj\Debug\LabDataSet.exe
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica4_P1\LabDataSet\obj\Debug\LabDataSet.pdb

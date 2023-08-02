@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d431b79b98964baab20eeb61b365ed24" Name="Diagram1">
+        <EntityTypeShape EntityType="P2_PC1_TAD_2019IIModel.CAB_RECETA" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="P2_PC1_TAD_2019IIModel.DET_RECETA" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="P2_PC1_TAD_2019IIModel.MEDICO" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="P2_PC1_TAD_2019IIModel.PACIENTE" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="P2_PC1_TAD_2019IIModel.PRODUCTO" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <AssociationConnector Association="P2_PC1_TAD_2019IIModel.FK_CAB_RECETA_MEDICO" ManuallyRouted="false" />
+        <AssociationConnector Association="P2_PC1_TAD_2019IIModel.FK_CAB_RECETA_PACIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="P2_PC1_TAD_2019IIModel.FK_DET_RECETA_CAB_RECETA" ManuallyRouted="false" />
+        <AssociationConnector Association="P2_PC1_TAD_2019IIModel.FK_DET_RECETA_PRODUCTO" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

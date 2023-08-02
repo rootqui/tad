@@ -1,0 +1,23 @@
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\bin\Debug\PC3_P1.exe.config
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\bin\Debug\PC3_P1.exe
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\bin\Debug\PC3_P1.pdb
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\obj\Debug\PC3_P1.csprojResolveAssemblyReference.cache
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\obj\Debug\PC3_P1.FrmBusqueda.resources
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\obj\Debug\PC3_P1.FrmPregunta1.resources
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\obj\Debug\PC3_P1.Properties.Resources.resources
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\obj\Debug\PC3_P1.csproj.GenerateResource.cache
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\obj\Debug\PC3_P1.csproj.CoreCompileInputs.cache
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\obj\Debug\PC3_P1.exe
+C:\Users\amollo\Documents\ISUR\TAD\2023 1\PC3-P1\Preguntas\obj\Debug\PC3_P1.pdb
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\bin\Debug\PC3_P1.exe.config
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\bin\Debug\PC3_P1.exe
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\bin\Debug\PC3_P1.pdb
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\obj\Debug\PC3_P1.csproj.AssemblyReference.cache
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\obj\Debug\PC3_P1.csproj.SuggestedBindingRedirects.cache
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\obj\Debug\PC3_P1.FrmBusqueda.resources
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\obj\Debug\PC3_P1.FrmPregunta1.resources
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\obj\Debug\PC3_P1.Properties.Resources.resources
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\obj\Debug\PC3_P1.csproj.GenerateResource.cache
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\obj\Debug\PC3_P1.csproj.CoreCompileInputs.cache
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\obj\Debug\PC3_P1.exe
+E:\Desktop\Work\cursos\TAD\Practicas\PC3-P1\Preguntas\obj\Debug\PC3_P1.pdb

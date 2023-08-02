@@ -1,0 +1,11 @@
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\bin\Debug\Lab_TablaCompleja.exe.config
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\bin\Debug\Lab_TablaCompleja.exe
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\bin\Debug\Lab_TablaCompleja.pdb
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\obj\Debug\Lab_TablaCompleja.csproj.AssemblyReference.cache
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\obj\Debug\Lab_TablaCompleja.csproj.SuggestedBindingRedirects.cache
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\obj\Debug\Lab_TablaCompleja.FrmRecursivo_Ubigeo.resources
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\obj\Debug\Lab_TablaCompleja.Properties.Resources.resources
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\obj\Debug\Lab_TablaCompleja.csproj.GenerateResource.cache
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\obj\Debug\Lab_TablaCompleja.csproj.CoreCompileInputs.cache
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\obj\Debug\Lab_TablaCompleja.exe
+D:\Isur\TAD\Practicas\Perm02\Practica02\LabTablaCompleja_Practica02_Perm02_RodrigoOtazu\Lab_TablaCompleja\obj\Debug\Lab_TablaCompleja.pdb

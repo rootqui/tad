@@ -1,0 +1,2 @@
+En evento BtnAyudaNom_Click, carga incompleta de campos de formulario.
+En evento BtnAyudaApe_Click, carga incompleta de campos de formulario.

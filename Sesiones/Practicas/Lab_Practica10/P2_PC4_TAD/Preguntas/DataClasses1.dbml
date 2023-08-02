@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="P2_PC1_TAD_2019II" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=P2_PC1_TAD_2019II;Integrated Security=True" SettingsObjectName="PracticaCalificada.Properties.Settings" SettingsPropertyName="P2_PC1_TAD_2019IIConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CAB_RECETA" Member="CAB_RECETA">
+    <Type Name="CAB_RECETA">
+      <Column Name="CREC_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CREC_FECHA" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="MEDI_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PACI_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CAB_RECETA_DET_RECETA" Member="DET_RECETA" ThisKey="CREC_ID" OtherKey="CREC_ID" Type="DET_RECETA" />
+      <Association Name="MEDICO_CAB_RECETA" Member="MEDICO" ThisKey="MEDI_ID" OtherKey="MEDI_ID" Type="MEDICO" IsForeignKey="true" />
+      <Association Name="PACIENTE_CAB_RECETA" Member="PACIENTE" ThisKey="PACI_ID" OtherKey="PACI_ID" Type="PACIENTE" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DET_RECETA" Member="DET_RECETA">
+    <Type Name="DET_RECETA">
+      <Column Name="CREC_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DREC_ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="PROD_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DREC_CANTIDAD" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DREC_INDICACION" Type="System.String" DbType="VarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="CAB_RECETA_DET_RECETA" Member="CAB_RECETA" ThisKey="CREC_ID" OtherKey="CREC_ID" Type="CAB_RECETA" IsForeignKey="true" />
+      <Association Name="PRODUCTO_DET_RECETA" Member="PRODUCTO" ThisKey="PROD_ID" OtherKey="PROD_ID" Type="PRODUCTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MEDICO" Member="MEDICO">
+    <Type Name="MEDICO">
+      <Column Name="MEDI_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MEDI_DNI" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="MEDI_APE_PATERNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MEDI_APE_MATERNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MEDI_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="MEDICO_CAB_RECETA" Member="CAB_RECETA" ThisKey="MEDI_ID" OtherKey="MEDI_ID" Type="CAB_RECETA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PACIENTE" Member="PACIENTE">
+    <Type Name="PACIENTE">
+      <Column Name="PACI_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PACI_DNI" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PACI_APE_PATERNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PACI_APE_MATERNO" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PACI_NOMBRE" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="PACIENTE_CAB_RECETA" Member="CAB_RECETA" ThisKey="PACI_ID" OtherKey="PACI_ID" Type="CAB_RECETA" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PRODUCTO" Member="PRODUCTO">
+    <Type Name="PRODUCTO">
+      <Column Name="PROD_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PROD_DESC" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="PRODUCTO_DET_RECETA" Member="DET_RECETA" ThisKey="PROD_ID" OtherKey="PROD_ID" Type="DET_RECETA" />
+    </Type>
+  </Table>
+</Database>

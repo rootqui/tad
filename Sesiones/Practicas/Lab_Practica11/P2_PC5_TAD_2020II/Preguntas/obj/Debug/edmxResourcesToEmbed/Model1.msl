@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="P2_PC1_TAD_2019IIModelStoreContainer" CdmEntityContainer="P2_PC1_TAD_2019IIEntities">
+    <EntitySetMapping Name="CAB_RECETA">
+      <EntityTypeMapping TypeName="P2_PC1_TAD_2019IIModel.CAB_RECETA">
+        <MappingFragment StoreEntitySet="CAB_RECETA">
+          <ScalarProperty Name="CREC_ID" ColumnName="CREC_ID" />
+          <ScalarProperty Name="CREC_FECHA" ColumnName="CREC_FECHA" />
+          <ScalarProperty Name="MEDI_ID" ColumnName="MEDI_ID" />
+          <ScalarProperty Name="PACI_ID" ColumnName="PACI_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DET_RECETA">
+      <EntityTypeMapping TypeName="P2_PC1_TAD_2019IIModel.DET_RECETA">
+        <MappingFragment StoreEntitySet="DET_RECETA">
+          <ScalarProperty Name="CREC_ID" ColumnName="CREC_ID" />
+          <ScalarProperty Name="DREC_ID" ColumnName="DREC_ID" />
+          <ScalarProperty Name="PROD_ID" ColumnName="PROD_ID" />
+          <ScalarProperty Name="DREC_CANTIDAD" ColumnName="DREC_CANTIDAD" />
+          <ScalarProperty Name="DREC_INDICACION" ColumnName="DREC_INDICACION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MEDICO">
+      <EntityTypeMapping TypeName="P2_PC1_TAD_2019IIModel.MEDICO">
+        <MappingFragment StoreEntitySet="MEDICO">
+          <ScalarProperty Name="MEDI_ID" ColumnName="MEDI_ID" />
+          <ScalarProperty Name="MEDI_DNI" ColumnName="MEDI_DNI" />
+          <ScalarProperty Name="MEDI_APE_PATERNO" ColumnName="MEDI_APE_PATERNO" />
+          <ScalarProperty Name="MEDI_APE_MATERNO" ColumnName="MEDI_APE_MATERNO" />
+          <ScalarProperty Name="MEDI_NOMBRE" ColumnName="MEDI_NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PACIENTE">
+      <EntityTypeMapping TypeName="P2_PC1_TAD_2019IIModel.PACIENTE">
+        <MappingFragment StoreEntitySet="PACIENTE">
+          <ScalarProperty Name="PACI_ID" ColumnName="PACI_ID" />
+          <ScalarProperty Name="PACI_DNI" ColumnName="PACI_DNI" />
+          <ScalarProperty Name="PACI_APE_PATERNO" ColumnName="PACI_APE_PATERNO" />
+          <ScalarProperty Name="PACI_APE_MATERNO" ColumnName="PACI_APE_MATERNO" />
+          <ScalarProperty Name="PACI_NOMBRE" ColumnName="PACI_NOMBRE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUCTO">
+      <EntityTypeMapping TypeName="P2_PC1_TAD_2019IIModel.PRODUCTO">
+        <MappingFragment StoreEntitySet="PRODUCTO">
+          <ScalarProperty Name="PROD_ID" ColumnName="PROD_ID" />
+          <ScalarProperty Name="PROD_DESC" ColumnName="PROD_DESC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

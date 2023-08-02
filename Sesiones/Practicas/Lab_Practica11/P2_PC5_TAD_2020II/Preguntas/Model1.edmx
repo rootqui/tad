@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="P2_PC1_TAD_2019IIModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CAB_RECETA">
+          <Key>
+            <PropertyRef Name="CREC_ID" />
+          </Key>
+          <Property Name="CREC_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CREC_FECHA" Type="date" Nullable="false" />
+          <Property Name="MEDI_ID" Type="int" Nullable="false" />
+          <Property Name="PACI_ID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DET_RECETA">
+          <Key>
+            <PropertyRef Name="CREC_ID" />
+            <PropertyRef Name="DREC_ID" />
+          </Key>
+          <Property Name="CREC_ID" Type="int" Nullable="false" />
+          <Property Name="DREC_ID" Type="int" Nullable="false" />
+          <Property Name="PROD_ID" Type="int" Nullable="false" />
+          <Property Name="DREC_CANTIDAD" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="DREC_INDICACION" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="MEDICO">
+          <Key>
+            <PropertyRef Name="MEDI_ID" />
+          </Key>
+          <Property Name="MEDI_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="MEDI_DNI" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="MEDI_APE_PATERNO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MEDI_APE_MATERNO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="MEDI_NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PACIENTE">
+          <Key>
+            <PropertyRef Name="PACI_ID" />
+          </Key>
+          <Property Name="PACI_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PACI_DNI" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="PACI_APE_PATERNO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PACI_APE_MATERNO" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PACI_NOMBRE" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PRODUCTO">
+          <Key>
+            <PropertyRef Name="PROD_ID" />
+          </Key>
+          <Property Name="PROD_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PROD_DESC" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_CAB_RECETA_MEDICO">
+          <End Role="MEDICO" Type="Self.MEDICO" Multiplicity="1" />
+          <End Role="CAB_RECETA" Type="Self.CAB_RECETA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICO">
+              <PropertyRef Name="MEDI_ID" />
+            </Principal>
+            <Dependent Role="CAB_RECETA">
+              <PropertyRef Name="MEDI_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CAB_RECETA_PACIENTE">
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="1" />
+          <End Role="CAB_RECETA" Type="Self.CAB_RECETA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PACIENTE">
+              <PropertyRef Name="PACI_ID" />
+            </Principal>
+            <Dependent Role="CAB_RECETA">
+              <PropertyRef Name="PACI_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DET_RECETA_CAB_RECETA">
+          <End Role="CAB_RECETA" Type="Self.CAB_RECETA" Multiplicity="1" />
+          <End Role="DET_RECETA" Type="Self.DET_RECETA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CAB_RECETA">
+              <PropertyRef Name="CREC_ID" />
+            </Principal>
+            <Dependent Role="DET_RECETA">
+              <PropertyRef Name="CREC_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DET_RECETA_PRODUCTO">
+          <End Role="PRODUCTO" Type="Self.PRODUCTO" Multiplicity="1" />
+          <End Role="DET_RECETA" Type="Self.DET_RECETA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCTO">
+              <PropertyRef Name="PROD_ID" />
+            </Principal>
+            <Dependent Role="DET_RECETA">
+              <PropertyRef Name="PROD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="P2_PC1_TAD_2019IIModelStoreContainer">
+          <EntitySet Name="CAB_RECETA" EntityType="Self.CAB_RECETA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DET_RECETA" EntityType="Self.DET_RECETA" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MEDICO" EntityType="Self.MEDICO" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PACIENTE" EntityType="Self.PACIENTE" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PRODUCTO" EntityType="Self.PRODUCTO" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_CAB_RECETA_MEDICO" Association="Self.FK_CAB_RECETA_MEDICO">
+            <End Role="MEDICO" EntitySet="MEDICO" />
+            <End Role="CAB_RECETA" EntitySet="CAB_RECETA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CAB_RECETA_PACIENTE" Association="Self.FK_CAB_RECETA_PACIENTE">
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+            <End Role="CAB_RECETA" EntitySet="CAB_RECETA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DET_RECETA_CAB_RECETA" Association="Self.FK_DET_RECETA_CAB_RECETA">
+            <End Role="CAB_RECETA" EntitySet="CAB_RECETA" />
+            <End Role="DET_RECETA" EntitySet="DET_RECETA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DET_RECETA_PRODUCTO" Association="Self.FK_DET_RECETA_PRODUCTO">
+            <End Role="PRODUCTO" EntitySet="PRODUCTO" />
+            <End Role="DET_RECETA" EntitySet="DET_RECETA" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="P2_PC1_TAD_2019IIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CAB_RECETA">
+          <Key>
+            <PropertyRef Name="CREC_ID" />
+          </Key>
+          <Property Name="CREC_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CREC_FECHA" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="MEDI_ID" Type="Int32" Nullable="false" />
+          <Property Name="PACI_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="MEDICO" Relationship="Self.FK_CAB_RECETA_MEDICO" FromRole="CAB_RECETA" ToRole="MEDICO" />
+          <NavigationProperty Name="PACIENTE" Relationship="Self.FK_CAB_RECETA_PACIENTE" FromRole="CAB_RECETA" ToRole="PACIENTE" />
+          <NavigationProperty Name="DET_RECETA" Relationship="Self.FK_DET_RECETA_CAB_RECETA" FromRole="CAB_RECETA" ToRole="DET_RECETA" />
+        </EntityType>
+        <EntityType Name="DET_RECETA">
+          <Key>
+            <PropertyRef Name="CREC_ID" />
+            <PropertyRef Name="DREC_ID" />
+          </Key>
+          <Property Name="CREC_ID" Type="Int32" Nullable="false" />
+          <Property Name="DREC_ID" Type="Int32" Nullable="false" />
+          <Property Name="PROD_ID" Type="Int32" Nullable="false" />
+          <Property Name="DREC_CANTIDAD" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="DREC_INDICACION" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="CAB_RECETA" Relationship="Self.FK_DET_RECETA_CAB_RECETA" FromRole="DET_RECETA" ToRole="CAB_RECETA" />
+          <NavigationProperty Name="PRODUCTO" Relationship="Self.FK_DET_RECETA_PRODUCTO" FromRole="DET_RECETA" ToRole="PRODUCTO" />
+        </EntityType>
+        <EntityType Name="MEDICO">
+          <Key>
+            <PropertyRef Name="MEDI_ID" />
+          </Key>
+          <Property Name="MEDI_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="MEDI_DNI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MEDI_APE_PATERNO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MEDI_APE_MATERNO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="MEDI_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="CAB_RECETA" Relationship="Self.FK_CAB_RECETA_MEDICO" FromRole="MEDICO" ToRole="CAB_RECETA" />
+        </EntityType>
+        <EntityType Name="PACIENTE">
+          <Key>
+            <PropertyRef Name="PACI_ID" />
+          </Key>
+          <Property Name="PACI_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PACI_DNI" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PACI_APE_PATERNO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PACI_APE_MATERNO" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PACI_NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="CAB_RECETA" Relationship="Self.FK_CAB_RECETA_PACIENTE" FromRole="PACIENTE" ToRole="CAB_RECETA" />
+        </EntityType>
+        <EntityType Name="PRODUCTO">
+          <Key>
+            <PropertyRef Name="PROD_ID" />
+          </Key>
+          <Property Name="PROD_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PROD_DESC" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="DET_RECETA" Relationship="Self.FK_DET_RECETA_PRODUCTO" FromRole="PRODUCTO" ToRole="DET_RECETA" />
+        </EntityType>
+        <Association Name="FK_CAB_RECETA_MEDICO">
+          <End Role="MEDICO" Type="Self.MEDICO" Multiplicity="1" />
+          <End Role="CAB_RECETA" Type="Self.CAB_RECETA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MEDICO">
+              <PropertyRef Name="MEDI_ID" />
+            </Principal>
+            <Dependent Role="CAB_RECETA">
+              <PropertyRef Name="MEDI_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CAB_RECETA_PACIENTE">
+          <End Role="PACIENTE" Type="Self.PACIENTE" Multiplicity="1" />
+          <End Role="CAB_RECETA" Type="Self.CAB_RECETA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PACIENTE">
+              <PropertyRef Name="PACI_ID" />
+            </Principal>
+            <Dependent Role="CAB_RECETA">
+              <PropertyRef Name="PACI_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DET_RECETA_CAB_RECETA">
+          <End Role="CAB_RECETA" Type="Self.CAB_RECETA" Multiplicity="1" />
+          <End Role="DET_RECETA" Type="Self.DET_RECETA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CAB_RECETA">
+              <PropertyRef Name="CREC_ID" />
+            </Principal>
+            <Dependent Role="DET_RECETA">
+              <PropertyRef Name="CREC_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DET_RECETA_PRODUCTO">
+          <End Role="PRODUCTO" Type="Self.PRODUCTO" Multiplicity="1" />
+          <End Role="DET_RECETA" Type="Self.DET_RECETA" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PRODUCTO">
+              <PropertyRef Name="PROD_ID" />
+            </Principal>
+            <Dependent Role="DET_RECETA">
+              <PropertyRef Name="PROD_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="P2_PC1_TAD_2019IIEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CAB_RECETA" EntityType="Self.CAB_RECETA" />
+          <EntitySet Name="DET_RECETA" EntityType="Self.DET_RECETA" />
+          <EntitySet Name="MEDICO" EntityType="Self.MEDICO" />
+          <EntitySet Name="PACIENTE" EntityType="Self.PACIENTE" />
+          <EntitySet Name="PRODUCTO" EntityType="Self.PRODUCTO" />
+          <AssociationSet Name="FK_CAB_RECETA_MEDICO" Association="Self.FK_CAB_RECETA_MEDICO">
+            <End Role="MEDICO" EntitySet="MEDICO" />
+            <End Role="CAB_RECETA" EntitySet="CAB_RECETA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CAB_RECETA_PACIENTE" Association="Self.FK_CAB_RECETA_PACIENTE">
+            <End Role="PACIENTE" EntitySet="PACIENTE" />
+            <End Role="CAB_RECETA" EntitySet="CAB_RECETA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DET_RECETA_CAB_RECETA" Association="Self.FK_DET_RECETA_CAB_RECETA">
+            <End Role="CAB_RECETA" EntitySet="CAB_RECETA" />
+            <End Role="DET_RECETA" EntitySet="DET_RECETA" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DET_RECETA_PRODUCTO" Association="Self.FK_DET_RECETA_PRODUCTO">
+            <End Role="PRODUCTO" EntitySet="PRODUCTO" />
+            <End Role="DET_RECETA" EntitySet="DET_RECETA" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="P2_PC1_TAD_2019IIModelStoreContainer" CdmEntityContainer="P2_PC1_TAD_2019IIEntities">
+          <EntitySetMapping Name="CAB_RECETA">
+            <EntityTypeMapping TypeName="P2_PC1_TAD_2019IIModel.CAB_RECETA">
+              <MappingFragment StoreEntitySet="CAB_RECETA">
+                <ScalarProperty Name="CREC_ID" ColumnName="CREC_ID" />
+                <ScalarProperty Name="CREC_FECHA" ColumnName="CREC_FECHA" />
+                <ScalarProperty Name="MEDI_ID" ColumnName="MEDI_ID" />
+                <ScalarProperty Name="PACI_ID" ColumnName="PACI_ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DET_RECETA">
+            <EntityTypeMapping TypeName="P2_PC1_TAD_2019IIModel.DET_RECETA">
+              <MappingFragment StoreEntitySet="DET_RECETA">
+                <ScalarProperty Name="CREC_ID" ColumnName="CREC_ID" />
+                <ScalarProperty Name="DREC_ID" ColumnName="DREC_ID" />
+                <ScalarProperty Name="PROD_ID" ColumnName="PROD_ID" />
+                <ScalarProperty Name="DREC_CANTIDAD" ColumnName="DREC_CANTIDAD" />
+                <ScalarProperty Name="DREC_INDICACION" ColumnName="DREC_INDICACION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MEDICO">
+            <EntityTypeMapping TypeName="P2_PC1_TAD_2019IIModel.MEDICO">
+              <MappingFragment StoreEntitySet="MEDICO">
+                <ScalarProperty Name="MEDI_ID" ColumnName="MEDI_ID" />
+                <ScalarProperty Name="MEDI_DNI" ColumnName="MEDI_DNI" />
+                <ScalarProperty Name="MEDI_APE_PATERNO" ColumnName="MEDI_APE_PATERNO" />
+                <ScalarProperty Name="MEDI_APE_MATERNO" ColumnName="MEDI_APE_MATERNO" />
+                <ScalarProperty Name="MEDI_NOMBRE" ColumnName="MEDI_NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PACIENTE">
+            <EntityTypeMapping TypeName="P2_PC1_TAD_2019IIModel.PACIENTE">
+              <MappingFragment StoreEntitySet="PACIENTE">
+                <ScalarProperty Name="PACI_ID" ColumnName="PACI_ID" />
+                <ScalarProperty Name="PACI_DNI" ColumnName="PACI_DNI" />
+                <ScalarProperty Name="PACI_APE_PATERNO" ColumnName="PACI_APE_PATERNO" />
+                <ScalarProperty Name="PACI_APE_MATERNO" ColumnName="PACI_APE_MATERNO" />
+                <ScalarProperty Name="PACI_NOMBRE" ColumnName="PACI_NOMBRE" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PRODUCTO">
+            <EntityTypeMapping TypeName="P2_PC1_TAD_2019IIModel.PRODUCTO">
+              <MappingFragment StoreEntitySet="PRODUCTO">
+                <ScalarProperty Name="PROD_ID" ColumnName="PROD_ID" />
+                <ScalarProperty Name="PROD_DESC" ColumnName="PROD_DESC" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

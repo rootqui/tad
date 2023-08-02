@@ -1,0 +1,10 @@
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica3_P1\Adaptador\bin\Debug\Adaptador.exe.config
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica3_P1\Adaptador\bin\Debug\Adaptador.exe
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica3_P1\Adaptador\bin\Debug\Adaptador.pdb
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica3_P1\Adaptador\obj\Debug\Adaptador.csprojResolveAssemblyReference.cache
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica3_P1\Adaptador\obj\Debug\Adaptador.FrmUsuario.resources
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica3_P1\Adaptador\obj\Debug\Adaptador.Properties.Resources.resources
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica3_P1\Adaptador\obj\Debug\Adaptador.csproj.GenerateResource.cache
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica3_P1\Adaptador\obj\Debug\Adaptador.csproj.CoreCompileInputs.cache
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica3_P1\Adaptador\obj\Debug\Adaptador.exe
+C:\Users\amollo\Desktop\TAD\2020II\Lab_Practica3_P1\Adaptador\obj\Debug\Adaptador.pdb

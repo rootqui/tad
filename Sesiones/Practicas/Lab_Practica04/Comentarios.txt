@@ -1,0 +1,1 @@
+Se debe utilizar la propiedad Value del control DateTimePicker para recuperar/establecer el valor de la fecha

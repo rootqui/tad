@@ -1,0 +1,11 @@
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\bin\Debug\Lab_Command.exe.config
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\bin\Debug\Lab_Command.exe
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\bin\Debug\Lab_Command.pdb
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\obj\Debug\Lab_Command.csprojResolveAssemblyReference.cache
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\obj\Debug\Lab_Command.FrmStoredProcedure.resources
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\obj\Debug\Lab_Command.FrmText.resources
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\obj\Debug\Lab_Command.Properties.Resources.resources
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\obj\Debug\Lab_Command.csproj.GenerateResource.cache
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\obj\Debug\Lab_Command.csproj.CoreCompileInputs.cache
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\obj\Debug\Lab_Command.exe
+C:\Users\amollo\Desktop\TAD\2021 1\LabSqlCommand_Desarrollado\Lab_Command\obj\Debug\Lab_Command.pdb

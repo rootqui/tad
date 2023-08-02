@@ -1,0 +1,26 @@
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.csprojAssemblyReference.cache
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.Pregunta1.resources
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.Properties.Resources.resources
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.Pregunta2.resources
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.csproj.GenerateResource.cache
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.csproj.CoreCompileInputs.cache
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\bin\Debug\Preguntas.exe.config
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\bin\Debug\Preguntas.exe
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\bin\Debug\Preguntas.pdb
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.exe
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.pdb
+D:\examen ado\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.Busqueda.resources
+C:\Isur\TAD\2019I\Parcial\2017-1-34592\2019I_EXAMEN_PARCIAL\Preguntas\bin\Debug\Preguntas.exe.config
+C:\Isur\TAD\2019I\Parcial\2017-1-34592\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.exe
+C:\Isur\TAD\2019I\Parcial\2017-1-34592\2019I_EXAMEN_PARCIAL\Preguntas\obj\Debug\Preguntas.pdb
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\bin\Debug\Preguntas.exe.config
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\obj\Debug\Preguntas.exe
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\obj\Debug\Preguntas.pdb
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\obj\Debug\Preguntas.csprojResolveAssemblyReference.cache
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\obj\Debug\Preguntas.Busqueda.resources
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\obj\Debug\Preguntas.FrmMFamilia.resources
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\obj\Debug\Preguntas.Pregunta1.resources
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\obj\Debug\Preguntas.Properties.Resources.resources
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\obj\Debug\Preguntas.csproj.GenerateResource.Cache
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\bin\Debug\Preguntas.exe
+C:\Isur\TAD\2019I\Laboratorios_2019I_P2\Preguntas\bin\Debug\Preguntas.pdb

@@ -1,0 +1,12 @@
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\bin\Debug\Preguntas.exe.config
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\bin\Debug\Preguntas.exe
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\bin\Debug\Preguntas.pdb
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\obj\Debug\Final.csprojResolveAssemblyReference.cache
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\obj\Debug\Preguntas.Busqueda.resources
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\obj\Debug\Preguntas.FrmPregunta2.resources
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\obj\Debug\Preguntas.FrmPregunta1.resources
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\obj\Debug\Preguntas.Properties.Resources.resources
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\obj\Debug\Final.csproj.GenerateResource.Cache
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\obj\Debug\Preguntas.exe
+C:\Isur\TAD\2019I\Final_TAD_2019I_Extemporaneo\Preguntas\obj\Debug\Preguntas.pdb
+C:\Isur\TAD\2019I\P2_PC1_TAD_2019II\Preguntas\bin\Debug\Preguntas.exe.config

@@ -1,0 +1,11 @@
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\bin\Debug\Coneccion.exe.config
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\bin\Debug\Coneccion.exe
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\obj\Debug\Coneccion.csproj.AssemblyReference.cache
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\obj\Debug\Coneccion.csproj.SuggestedBindingRedirects.cache
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\obj\Debug\Coneccion.Form1.resources
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\obj\Debug\Coneccion.Properties.Resources.resources
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\obj\Debug\Coneccion.csproj.GenerateResource.cache
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\obj\Debug\Coneccion.csproj.CoreCompileInputs.cache
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\obj\Debug\Coneccion.exe
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\obj\Debug\Coneccion.pdb
+E:\ISUR\Actual\cursos\tad\practicas\Lab_Practica1_P1\Coneccion\bin\Debug\Coneccion.pdb
